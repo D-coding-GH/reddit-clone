@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header.js";
 
 function App() {
-  return <div className="App">Hello World, this is Alex's branch</div>;
+  return <Header />;
 }
 
 export default App;
