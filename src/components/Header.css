@@ -1,0 +1,47 @@
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#logoCont {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  fill: orange;
+}
+#searchBar {
+  font-size: large;
+  flex-grow: 1;
+  margin: 10px;
+  max-width: 690px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightgrey;
+}
+#loginCont {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 30px;
+}
+#loginCont button {
+  flex-grow: 1;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+#logIn {
+  color: blue;
+  background-color: white;
+}
+#signUp {
+  color: white;
+  background-color: blue;
+}
