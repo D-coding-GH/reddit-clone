@@ -1,15 +1,15 @@
 import "./App.css";
+import Trending from "./components/Trending.js";
 import Header from "./components/Header.js";
-import Trending from './components/Trending';
 import Popular from "./components/Popular.js";
 function App() {
   return (
     <div>
       <Header />
-    <Trending />
+      <Trending />
       <Popular />
     </div>
   );
 }
 
-
+export default App;
