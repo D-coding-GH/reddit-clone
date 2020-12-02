@@ -1,0 +1,32 @@
+* {
+  margin: 10px;
+}
+#popular {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+#central {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#sortBar {
+  border: 1px lightgrey solid;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#sortBar div {
+  margin: 10px;
+}
+
+#posts {
+  background-color: white;
+}
+
+#sidebar {
+  background-color: white;
+}
