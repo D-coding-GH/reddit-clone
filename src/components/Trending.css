@@ -1,0 +1,74 @@
+
+
+
+.container{
+/* background-color: orange; */
+display: flex;
+justify-content: center;
+justify-content: space-evenly;
+flex-direction: row;
+margin-top: 50px;
+height: 180px;
+margin-left: 40px;
+margin-right: 40px;
+
+
+
+
+  
+}
+
+.card-wrapper{
+}
+
+
+#card1{
+    background-image: url("images/reddit-image1.jpg");
+    background-size: cover;
+    border-radius: 5%;
+    width: 250px;
+}
+
+#card2{
+    background-image: url("images/redditimage2.jpg");
+    background-size: cover;
+    border-radius: 5%;
+    width: 250px;
+}
+
+#card3{
+    background-image: url("images/redditimage3.jpg");
+    background-size: cover;
+    border-radius: 5%;
+    width: 250px;
+}
+
+
+#card4{
+    background-image: url("images/redditimage4.jpg");
+    background-size: cover;
+    border-radius: 5%;
+    width: 250px;
+}
+
+
+
+
+
+  h3{
+      font-size: small;
+      color: white;
+      
+      
+      
+  }
+
+ h4{
+     font-size: xx-small;
+     color: white;
+     
+     /* margin-top: 118px;
+     margin-left: 5px; */
+     
+ } 
+
