@@ -1,5 +1,6 @@
 import React from "react";
 import Sortbar from "./Sortbar";
+import Sidebar from './Sidebar'
 import "./Popular.css";
 const Popular = () => {
   return (
@@ -12,7 +13,7 @@ const Popular = () => {
           This div is for our content, including votes and comments
         </div>
       </div>
-      <div id="sidebar">Sidebar content</div>
+       <Sidebar/>
       {/*this div contains all the sidebar content*/}
     </div>
   );
