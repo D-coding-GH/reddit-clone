@@ -8,9 +8,9 @@ import './Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <div className="Container">
+        <div className="sidebarContainer">
             <div className="sBarTop">
-            <h1>Top News Communities</h1>
+            <h1 className="topNews">Top News Communities</h1>
             </div>
             <div className="topNews1">
                 <div id ="nottheonion">
@@ -62,17 +62,17 @@ const Sidebar = () => {
                 <button id ="viewAllcentre">VIEW ALL</button>
             </div>
             <div className="sideBarBase">
-                <div className="top">
-                    <button>Top</button>
+                <div >
+                    <button className="baseButtons" >Top</button>
                 </div>
-                <div className="nearYou" >
-                    <button>Near You</button>
+                <div  >
+                    <button className="baseButtons" >NearYou</button>
                 </div>
-                <div className="gaming" >
-                    <button>Gaming</button>
+                <div  >
+                    <button className="baseButtons"  >Gaming</button>
                 </div>
-                <div className="sports" >
-                    <button>Sports</button>
+                <div  >
+                    <button className="baseButtons"  >Sports</button>
                 </div>
 
             </div>

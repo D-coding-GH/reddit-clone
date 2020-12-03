@@ -10,7 +10,7 @@ width:350px;
 .sBarTop{
     background-color: rgb(30, 105, 196);
     width: 350px;
-    height: 120px;
+    height: 100px;
 }
 
 h1{
@@ -37,9 +37,10 @@ h1{
 
 #viewAllcentre{
      
-     height: 50px;
-     width:200px ;
+     height: 35px;
+     width:300px ;
      background-color: rgb(30, 105, 196);
+     color:white;
      border-radius: 5%;
      
 
@@ -56,14 +57,11 @@ h1{
     justify-content: center;
     justify-content: space-between;
     flex-direction: row;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
 
 }
-
-
-
 
 
 #technews{
@@ -98,4 +96,6 @@ h1{
     height: 20px;   
 }
 
-
+.baseButtons{
+    color: blue;
+}

@@ -1,14 +1,25 @@
 import React from "react";
+import './Sortbar.css'
 
 const Sortbar = () => {
   return (
     <div id="sortBar">
-      <div>Hot</div>
+      <div>
+      <button id="hotButton">HOT</button>
+      </div>
       <RegionSelect />
-      <div>New</div>
-      <div>Top</div>
-      <div>...</div>
-      <div>display style dropdown here</div>
+      <div>
+      <button id="newButton">NEW</button>
+      </div>
+      <div>
+      <button  id="topButton">TOP</button>
+      </div>
+      <div>
+      <button  id="...button">...</button>
+      </div>
+      <div>
+      <button id="dropButton">dropdown</button>
+      </div>
     </div>
   );
 };
