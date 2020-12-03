@@ -1,19 +1,54 @@
 import React from "react";
-
+import smile from "./images2/smiling-obama.jpg";
 const Posts = () => {
   return (
-    <ul>
-      <PostsCard image="" />
+    <ul className="postsList">
+      <PostsCard
+        id="Post1"
+        image={smile}
+        sub="r/funny"
+        title="Obama's funny joke: Why did the chicken cross the road?"
+        content="To get to the other side"
+        comments={["lmao", "I don't like this joke, I'm offended"]}
+      />
+      <PostsCard
+        id="Post2"
+        image=""
+        sub="r/AskReddit"
+        title="title 2"
+        comments={["dummy comment3", "dummy comment 4"]}
+      />
     </ul>
   );
 };
 
 const PostsCard = (props) => {
   return (
-    <li className="postWrapper">
-      <h1>hi</h1>
-      <img src={props.image} alt="" />
+    <li>
+      <div className="votesContainer">
+        <div className="upVote">Up</div>
+        <div className="voteNumber">23</div>
+        {/*we need to do some on click and state magic here*/}
+        <div className="downVote">Down</div>
+      </div>
+      <div className="postContainer">
+        <div className="postSubReddit"> {props.sub}</div>
+        <div className="postTitle">{props.title}</div>
+        <p className="postContent">{props.content}</p>
+        <Comments comments={props.comments} id={props.id} />
+      </div>
+      <div className="postImageContainer">
+        <img className="postImage" src={props.image} alt="" />
+      </div>
     </li>
   );
+};
+
+const Comments = (props) => {
+  const commentList = props.comments;
+  const commentDisplay = commentList.map((comment) => {
+    return <li className={`comment${props.id}`}>{comment}</li>;
+  });
+  return <ul>{commentDisplay}</ul>;
 };
 export default Posts;
