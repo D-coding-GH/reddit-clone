@@ -1,6 +1,7 @@
 import React from "react";
 import Sortbar from "./Sortbar";
 import Posts from "./Posts";
+import Sidebar from "./Sidebar";
 import "./Popular.css";
 const Popular = () => {
   return (
@@ -11,7 +12,7 @@ const Popular = () => {
         <Sortbar />
         <Posts />
       </div>
-      <div id="sidebar">Sidebar content</div>
+      <Sidebar />
       {/*this div contains all the sidebar content*/}
     </div>
   );
