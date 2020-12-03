@@ -1,0 +1,34 @@
+
+#technews{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#nottheonion{
+   display: flex;
+   flex-direction: row;
+}
+
+#uplift{
+    display: flex;
+   flex-direction: row;
+}
+
+#saveClick{
+    display: flex;
+   flex-direction: row;
+}
+
+#offBeat{
+    display: flex;
+   flex-direction: row;
+}
+
+#sbimage1{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;   
+}
+
+
