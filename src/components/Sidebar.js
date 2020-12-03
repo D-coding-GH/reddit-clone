@@ -8,7 +8,7 @@ import './Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <div className="sbarContainer">
+        <div className="Container">
             <div className="sBarTop">
             <h1>Top News Communities</h1>
             </div>
@@ -21,7 +21,7 @@ const Sidebar = () => {
                     <p>r/nottheonion</p>
                 </div>
             </div>
-            <div className="topNews2">
+            <div className="topNews1">
                 <div id ="technews" >
                    <p>2</p>
                    
@@ -31,7 +31,7 @@ const Sidebar = () => {
                     <p>r/technews</p>
                 </div>
             </div>
-            <div className="topNews3">
+            <div className="topNews1">
                 <div id ="uplift">
                 <p>3</p>
                     <object id="sbimage1" data={sbImage3} type="image/svg+xml">
@@ -40,7 +40,7 @@ const Sidebar = () => {
                     <p>r/UpLiftingNews</p>
                 </div>
             </div>
-            <div className="topNews4">
+            <div className="topNews1">
                 <div id ="saveClick">
                 <p>4</p>
                     <object id="sbimage1" data={sbImage4} type="image/svg+xml">
@@ -49,7 +49,7 @@ const Sidebar = () => {
                     <p>r/savedyouaclick</p>
                 </div>
             </div>
-            <div className="topNews5">
+            <div className="topNews1">
                 <div id ="offBeat" >
                 <p>5</p>
                     <object id="sbimage1" data={sbImage5} type="image/svg+xml">
@@ -59,13 +59,21 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className="viewAll">
-                <div id ="viewAllcentre"></div>
+                <button id ="viewAllcentre">VIEW ALL</button>
             </div>
             <div className="sideBarBase">
-                <div className="top">Top</div>
-                <div className="nearYou" >Near You</div>
-                <div className="gaming" >Gaming</div>
-                <div className="sports" >sports</div>
+                <div className="top">
+                    <button>Top</button>
+                </div>
+                <div className="nearYou" >
+                    <button>Near You</button>
+                </div>
+                <div className="gaming" >
+                    <button>Gaming</button>
+                </div>
+                <div className="sports" >
+                    <button>Sports</button>
+                </div>
 
             </div>
 
