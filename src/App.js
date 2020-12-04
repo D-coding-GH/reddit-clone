@@ -2,7 +2,6 @@ import "./App.css";
 import Trending from "./components/Trending.js";
 import Header from "./components/Header.js";
 import Popular from "./components/Popular.js";
-import Sortbar from "./components/Sortbar.js"
 
 function App() {
   return (
@@ -10,9 +9,6 @@ function App() {
       <Header />
       <Trending />
       <Popular />
-      
-      
-
     </div>
   );
 }
