@@ -1,7 +1,7 @@
 
 
 
-.container{
+.trendingContainer{
 /* background-color: orange; */
 display: flex;
 justify-content: center;
@@ -12,32 +12,48 @@ height: 180px;
 margin-left: 40px;
 margin-right: 40px;
 
-
-
-
-  
 }
 
-.card-wrapper{
+.trendingHeadline{
+
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    height: 90px;
+    font-size:medium;
+      color: white;
+
 }
+
+.trendingTopics{
+
+font-size: xx-small;
+     color: white;
+
+}
+
+
 
 
 #card1{
-    background-image: url("images2/reddit-image1.jpg");
+    background-image: linear-gradient( to bottom, #f9f9fa00, rgba(109, 107, 108, 0.632)), url("images2/reddit-image1.jpg");
+    /* back ground image url("images2/reddit-image1.jpg") */
     background-size: cover;
     border-radius: 5%;
     width: 250px;
 }
 
 #card2{
-    background-image: url("images2/redditimage2.jpg");
+    background-image: linear-gradient( to bottom, #f9f9fa00, rgba(109, 107, 108, 0.632)), url("images2/redditimage2.jpg");
+    /* background-image: url("images2/redditimage2.jpg"); */
     background-size: cover;
     border-radius: 5%;
     width: 250px;
 }
 
 #card3{
-    background-image: url("images2/redditimage3.jpg");
+    background-image: linear-gradient( to bottom, #f9f9fa00, rgba(109, 107, 108, 0.632)),  url("images2/redditimage3.jpg");
+    /* background-image: url("images2/redditimage3.jpg"); */
     background-size: cover;
     border-radius: 5%;
     width: 250px;
@@ -45,7 +61,8 @@ margin-right: 40px;
 
 
 #card4{
-    background-image: url("images2/redditimage4.jpg");
+    background-image: linear-gradient( to bottom, #f9f9fa00, rgba(109, 107, 108, 0.632)),   url("images2/redditimage4.jpg");
+    /* background-image: url("images2/redditimage4.jpg"); */
     background-size: cover;
     border-radius: 5%;
     width: 250px;
@@ -55,20 +72,10 @@ margin-right: 40px;
 
 
 
-  h3{
-      font-size: small;
-      color: white;
-      
-      
-      
-  }
-
- h4{
-     font-size: xx-small;
-     color: white;
+  
      
      /* margin-top: 118px;
      margin-left: 5px; */
      
- } 
+ 
 

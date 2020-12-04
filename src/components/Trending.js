@@ -7,7 +7,7 @@ class Trending extends React.Component {///...danny version
       return (
   
         <div>
-          <div className="container">
+          <div className="trendingContainer">
            
            <div id = "card1"    >
             <Card 
@@ -60,8 +60,8 @@ class Trending extends React.Component {///...danny version
     return (
       <div className="card-wrapper">
         <img src={props.image} alt="" className = "photo1"/>
-        <h3>{props.headline}</h3>
-        <h4>{props.topic.toUpperCase()}</h4>
+        <h3 className ="trendingHeadline"  >{props.headline}</h3>
+        <h4 className = "trendingTopics"  >{props.topic.toUpperCase()}</h4>
       </div>
     );
   };
