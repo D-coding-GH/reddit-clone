@@ -1,123 +1,105 @@
-
-.Container{
-
-height:200px;
-width:250px;
-
+.sidebarContainer {
+  margin-top: 70px;
+}
+.sBarTop {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  background-image: url("images2/Reddit-background.jpg");
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
 }
 
-
-.sBarTop{
-    
-    width: 350px;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    background-image: url("images2/Reddit-background.jpg");
-    background-size: cover;
+.topNews {
+  color: rgba(18, 86, 233, 0.81);
+  font-size: medium;
+  padding-bottom: 100px;
+  width: 340px;
 }
 
-.topNews{
-    color: rgba(18, 86, 233, 0.81);
-    font-size: medium;
-    padding-bottom: 100px;
-    width:340px;
-
-
+.topNews1 {
+  background-color: rgb(244, 247, 250);
+  width: 350px;
+  height: 70px;
+  border: 1px solid rgb(133, 128, 128);
 }
 
-#faCaretUp{
-    color: rgb(40, 218, 40);
+.viewAll {
+  background-color: rgb(244, 247, 250);
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.topNews1{
-    background-color: rgb(244, 247, 250);
-    width:350px;
-    height:70px;
-    border: 1px solid rgb(133, 128, 128);
-
+#viewAllcentre {
+  height: 35px;
+  width: 300px;
+  background-color: rgb(30, 105, 196);
+  color: white;
+  border-radius: 5%;
+  border: none;
 }
 
-.viewAll{
-
-    background-color: rgb(244, 247, 250);
-    width:350px;
-    height:50px;
-    display: flex;
-    justify-content: center;
+#viewAllcentre:hover {
+  background-color: rgb(64, 140, 233);
 }
 
-#viewAllcentre{
-     
-     height: 35px;
-     width:300px ;
-     background-color: rgb(30, 105, 196);
-     color:white;
-     border-radius: 5%;
-     border: none;
+.sideBarBase {
+  background-color: rgb(244, 247, 250);
+  width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 11px;
+  padding-bottom: 10px;
 }
 
-#viewAllcentre:hover{background-color: rgb(64, 140, 233); }
-
-
-.sideBarBase{
-
-    background-color: rgb(244, 247, 250);
-    width:330px;
-    height:50px;
-    display: flex;
-    justify-content: center;
-    /* justify-content: space-between; */
-    flex-direction: row;
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-right: 11px;
-    padding-bottom: 10px;
-
+#technews {
+  display: flex;
+  flex-direction: row;
 }
 
-
-#technews{
-    display: flex;
-    flex-direction: row;
+#nottheonion {
+  display: flex;
+  flex-direction: row;
 }
 
-
-#nottheonion{
-   display: flex;
-   flex-direction: row;
+#uplift {
+  display: flex;
+  flex-direction: row;
 }
 
-#uplift{
-    display: flex;
-   flex-direction: row;
+#saveClick {
+  display: flex;
+  flex-direction: row;
 }
 
-#saveClick{
-    display: flex;
-   flex-direction: row;
+#offBeat {
+  display: flex;
+  flex-direction: row;
 }
 
-#offBeat{
-    display: flex;
-   flex-direction: row;
+#sbimage1 {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
-#sbimage1{
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-
+.baseButtons {
+  color: blue;
+  border: none;
+  border-radius: 8%;
+  background-color: rgba(210, 207, 207, 0.255);
+  height: 30px;
 }
 
-.baseButtons{
-    color: blue;
-    border: none;
-    border-radius: 8%;
-    background-color: rgba(210, 207, 207, 0.255);
-    height: 30px;
+.baseButtons:hover {
+  background-color: rgb(219, 219, 223);
 }
-
-
-.baseButtons:hover{background-color: rgb(219, 219, 223); }

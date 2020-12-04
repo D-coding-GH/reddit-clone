@@ -48,14 +48,6 @@ const Posts = () => {
   };
   return (
     <ul className="postsList">
-      {/* <PostsCard
-        id="Post1"
-        image={smile}
-        sub=
-        title="Obama's funny joke: Why did the chicken cross the road?"
-        content="To get to the other side"
-        comments={["lmao", "I don't like this joke, I'm offended"]}
-      /> */}
       <li id="Post1">
         <div className="votesContainer">
           <FontAwesomeIcon icon={faArrowUp} onClick={upVoteHandler} />
@@ -100,14 +92,18 @@ const Comments = (props) => {
   const commentDisplay = commentList.map((comment) => {
     i++;
     return (
-      <li key={`${props.id}${i}`} className={`comment${props.id}`}>
+      <li key={`${props.id}${i}`} className={`comment`}>
         {comment}
       </li>
     );
   });
   return (
     <div id={`${props.id}Comments`}>
-      <ul>{commentDisplay}</ul>
+      <ul className="commentList">
+        <li className="commentHeading">Comments:</li>
+        {commentDisplay}
+      </ul>
+
       <CommentBox
         onSubmit={props.onSubmit}
         value={props.value}

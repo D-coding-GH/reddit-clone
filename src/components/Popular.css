@@ -1,16 +1,15 @@
-* {
-  margin: 10px;
-}
 #popular {
   display: flex;
   flex-wrap: nowrap;
   width: 70%;
   margin: auto;
+  margin-top: 20px;
 }
 #central {
   width: 70%;
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 #sortBar {
   border: 1px lightgrey solid;
@@ -24,6 +23,7 @@
 }
 .postsList {
   list-style: none;
+  padding: 0;
 }
 .postsList li {
   display: flex;
@@ -35,14 +35,22 @@
 .votesContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 10%;
+  background-color: rgb(250, 249, 249);
+  padding-left: 2.5%;
+  border-radius: 10px 0 0 10px;
 }
 .postContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  padding-left: 2.5%;
 }
-
+.postContainer div {
+  padding-bottom: 10px;
+}
 .postSubReddit {
   color: black;
 }
@@ -64,4 +72,15 @@
 
 #sidebar {
   background-color: white;
+}
+
+.commentList {
+  padding: 0;
+}
+.comment {
+  font-size: small;
+}
+
+form {
+  margin-top: 5px;
 }
