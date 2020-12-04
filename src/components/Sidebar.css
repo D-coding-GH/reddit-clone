@@ -11,9 +11,12 @@ width:350px;
     background-color: rgb(30, 105, 196);
     width: 350px;
     height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
 }
 
-h1{
+.topNews{
     color: white;
 
 }
@@ -30,7 +33,7 @@ h1{
 
     background-color: rgb(244, 247, 250);
     width:350px;
-    height:100px;
+    height:50px;
     display: flex;
     justify-content: center;
 }
@@ -42,10 +45,10 @@ h1{
      background-color: rgb(30, 105, 196);
      color:white;
      border-radius: 5%;
-     
-
-
+     border: none;
 }
+
+#viewAllcentre:hover{background-color: rgb(64, 140, 233); }
 
 
 .sideBarBase{
@@ -55,11 +58,12 @@ h1{
     height:50px;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: row;
     padding-top: 0px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 11px;
+    padding-bottom: 10px;
 
 }
 
@@ -98,4 +102,11 @@ h1{
 
 .baseButtons{
     color: blue;
+    border: none;
+    border-radius: 8%;
+    background-color: rgba(210, 207, 207, 0.255);
+    height: 30px;
 }
+
+
+.baseButtons:hover{background-color: rgb(219, 219, 223); }
