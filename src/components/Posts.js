@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import smile from "./images2/smiling-obama.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -47,10 +47,19 @@ const PostsCard = (props) => {
 };
 
 const Comments = (props) => {
-  const commentList = props.comments;
+  const [commentList, setCommentList] = useState(props.comments);
   const commentDisplay = commentList.map((comment) => {
     return <li className={`comment${props.id}`}>{comment}</li>;
   });
-  return <ul>{commentDisplay}</ul>;
+  return (
+    <ul>
+      {commentDisplay}
+      <CommentAdd id={props.id} />
+    </ul>
+  );
+};
+
+const CommentAdd = () => {
+  return <input type="text"></input>;
 };
 export default Posts;
