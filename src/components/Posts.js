@@ -1,5 +1,7 @@
 import React from "react";
 import smile from "./images2/smiling-obama.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 const Posts = () => {
   return (
     <ul className="postsList">
@@ -26,10 +28,10 @@ const PostsCard = (props) => {
   return (
     <li>
       <div className="votesContainer">
-        <div className="upVote">Up</div>
+        <FontAwesomeIcon icon={faArrowUp} />
         <div className="voteNumber">23</div>
         {/*we need to do some on click and state magic here*/}
-        <div className="downVote">Down</div>
+        <FontAwesomeIcon icon={faArrowDown} />
       </div>
       <div className="postContainer">
         <div className="postSubReddit"> {props.sub}</div>
