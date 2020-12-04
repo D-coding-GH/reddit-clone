@@ -1,25 +1,29 @@
 import React from "react";
 import { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBurn, faCog, faSignal } from "@fortawesome/free-solid-svg-icons";
 import './Sortbar.css'
+import { config } from "@fortawesome/fontawesome-svg-core";
 
 const Sortbar = () => {
   return (
     <div className = "sortBar">
       <div>
-      <button id="hotButton">HOT</button>
+      
+      <button  id="hotButton"><FontAwesomeIcon icon={faBurn} id="faBurn"></FontAwesomeIcon> HOT</button>
       </div>
       <RegionSelect />
       <div>
-      <button id="newButton">NEW</button>
+      <button id="newButton"><FontAwesomeIcon icon={faCog} id="faCog"></FontAwesomeIcon>NEW</button>
       </div>
       <div>
-      <button  id="topButton">TOP</button>
+      <button  id="topButton"><FontAwesomeIcon icon={faSignal} id="faSignal"></FontAwesomeIcon>TOP</button>
       </div>
       <div>
       <button  id="dotButton">...</button>
       </div>
       <div>
-      <button id="dropButton"> ☰</button>
+      <button id="dropButton"> ☰ </button>
       </div>
     </div>
  
@@ -33,7 +37,7 @@ const Sortbar = () => {
 
 
 class RegionSelect extends Component {
-  container = React.createRef();
+  dropdownContainer = React.createRef();
   state = {
     open: false,
   };
@@ -44,7 +48,7 @@ class RegionSelect extends Component {
     document.removeEventListener("mousedown", this.handleClickOutside);
   }
   handleClickOutside = event => {
-    if (this.container.current && !this.container.current.contains(event.target)) {
+    if (this.dropdownContainer.current && !this.dropdownContainer.current.contains(event.target)) {
       this.setState({
         open: false,
       });
@@ -59,17 +63,21 @@ class RegionSelect extends Component {
   };
   render() {
     return (
-      <div >
-        <div className = "container" ref={this.container}>
+      <div className = "dropDown" >
+        <div className = "dropdownContainer" ref={this.dropdownContainer}>
           <button id="regButton"  onClick={this.handleButtonClick}>
             United Kingdom
           </button>
           {this.state.open && (
-            <div class = "container">
-            <li className ="showmenuli"  > menu item 1</li>
-            <li   className ="showmenuli" > menu item 2</li>
-            <li  className ="showmenuli" > menu item 3</li>
-            <li className ="showmenuli"  >  menu item 4</li>
+            <div class = "dropdownContainer">
+            <li className ="showmenuli"  > EveryWhere</li>
+            <li   className ="showmenuli" > United States</li>
+            <li  className ="showmenuli" > Argentina</li>
+            <li className ="showmenuli"  > Australia</li>
+            <li className ="showmenuli"  > Bulgaria</li>
+            <li className ="showmenuli"  > Canada</li>
+            <li className ="showmenuli"  > Chile</li>
+            <li className ="showmenuli"  > Colombia</li>
           </div>
           )}
         </div>
