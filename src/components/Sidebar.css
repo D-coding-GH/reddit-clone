@@ -2,23 +2,33 @@
 .Container{
 
 height:200px;
-width:350px;
+width:250px;
 
 }
 
 
 .sBarTop{
-    background-color: rgb(30, 105, 196);
+    
     width: 350px;
     height: 100px;
     display: flex;
     justify-content: flex-end;
     margin: 0;
+    background-image: url("images2/Reddit-background.jpg");
+    background-size: cover;
 }
 
 .topNews{
-    color: white;
+    color: rgba(18, 86, 233, 0.81);
+    font-size: medium;
+    padding-bottom: 100px;
+    width:340px;
 
+
+}
+
+#faCaretUp{
+    color: rgb(40, 218, 40);
 }
 
 .topNews1{
@@ -97,7 +107,8 @@ width:350px;
 #sbimage1{
     border-radius: 50%;
     width: 20px;
-    height: 20px;   
+    height: 20px;
+
 }
 
 .baseButtons{
